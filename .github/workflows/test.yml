@@ -1,0 +1,11 @@
+name: Test Checkout
+
+on: push
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ver archivos
+        run: ls -la
