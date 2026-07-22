@@ -1,0 +1,13 @@
+name="test3"
+on: push
+jobs:
+  NOMBRE:
+    runs-on: ubuntu-latest
+    env:
+      STUDENT_NAME: "slim"
+    steps:
+      - uses: actions/checkout@v5
+      - name: "test3"
+        run: echo $STUDENT_NAME
+      - name: "test33"
+        run: echo ${{ env.STUDENT_NAME}}
